@@ -7,6 +7,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<style>
+      #text {
+        display: none;
+      }
+    </style>
+    
   </head>
   <body>
     <div class="container">
@@ -18,7 +24,7 @@
               <div class="selector">
                 <select class="selectpicker" id="blog-selector">
                   <option value="1">Tornando-se Regente</option>
-                  <option value="2">Post 2</option>
+                  <option value="2">Características de Domínios</option>
                   <option value="3">Post 3</option>
                   <option value="4">Post 4</option>
                   <option value="5">Post 5</option>
@@ -30,13 +36,58 @@
             <div class="col-md-12 post" id="post-1">
               <h2>Tornando-se Regente</h2>
               <p>Um <i>regente</i> é o senhor de um domínio, responsável pela proteção de uma terra e do povo que lá habita, com autoridade sobre ambos. Há duas formas de se tornando um regente: criar um domínio ou conquistar um já existente. Ambos os caminhos envolvem uma aventura - a ascensão de uma campanha e não deve acontecer sem o envolvimento do mestre.</p>
-              <h3>Criando um Domínio</h3>
-              <p>Para criar um domínio, você precisa possuir terras virgens - que pode conquistar como parte de uma aventura. Então deve gastar uma ação de domínio (veja a seguir), 5.000 PP e fazer um teste de Nobreza (CD 20). Se passar, cria um domínio de nível 1,, com corte inexistente, popularidade tolerável e sem tesouro ou construções. Se falhar, pode tentar novamente, gastando mais uma ação de domínio e 5.000 PP.
-              </p>
+              <strong><h4>Criando um Domínio</h4></strong>
+              <p>Para criar um domínio, você precisa possuir terras virgens - que pode conquistar como parte de uma aventura. Então deve gastar uma ação de domínio (veja a seguir), 5.000 PP e fazer um teste de Nobreza (CD 20). Se passar, cria um domínio de nível 1, com corte inexistente, popularidade tolerável e sem tesouro ou construções. Se falhar, pode tentar novamente, gastando mais uma ação de domínio e 5.000 PP.</p>
+              
+            <strong><h4>Conquistando um Domínio</h4></strong>
+            <p>Você pode conquistar um domínio como recompensa por uma aventura. Por exemplo, se você derrotou um tirano que escravizava seu povo, pode tomar o lugar dele como senhor daquelas terras. As estatísticas de um domínio existente são definidas pelo mestre.</p>
             </div>
+            
             <div class="col-md-12 post" id="post-2">
-              <h2>Post 2</h2>
-              <p>Vestibulum vel lectus vel mi bibendum dapibus sed a neque. Proin dictum, est eu sagittis dapibus, nisi nisi faucibus leo, eu porta magna nibh sed purus. Suspendisse ut semper risus. Donec ut sapien et erat condimentum dictum.</p>
+              <h2>Características de Domínios</h2>
+              <p>Um <i>domínio</i> é uma divisão pol[itica de terras, governada por um regente. Um domínio geralmente possui de 30 a 100km de largura - o que significa que um viajante a pé leva de um a três dias para atravessá-lo - mas as dimensões exatas não são importantes. Domínios possuem as seguintes características.
+              <strong><h4>Nome do Domínio</h4></strong>
+              <p>Pode ser um nome próprio(Cartalla, Marnesse, Orveil...) ou um que remeta a uma característica do lugar (Pico da Neblina, Ponte de Pedra, Dois Troncos...). No caso de um novo domínio, cabe ao personagem batizá-lo.</p> 
+              <strong><h4>Regente</h4></strong>
+              <p>O nome do regente do domínio.</p> 
+              
+              <strong><h4>Nível</h4></strong>
+              <p>Uma medida geral da população, do desenvolvimento e da prosperidade do domínio.</p>
+<button id="btn">Exibir texto</button><br>
+    <div id="text">
+      
+<h3><u>Níveis de Domínio</u></h3>
+<p>O nível de um domínio define quanto você ganha com impostos e seu máximo de construçlões, e opera em uma escala de 1 a 7. Você pode subir o nível do domínio com a ação governar.</p>
+<p><b>Nível 0</b>.Terras ermas, desertas ou abandonadas, sem população residente. Não constitui um domínio.</p>
+
+<p><b>Nível 1 e 2.</b> Terras esparsamente povoadas, com fazendas e povoados. Os habitantes são camponeses, lenhadores, caçadores e curandeiros. As notícias chegam através de mercadores ambulantes - quando chegam. A aparição de um nobre ou de um grupo de aventuteiros é um grande evento. Na verdade, até a feira da colheita é um grande evento! A população varia de 1.000 a 2.500 pessoas.</p>
+
+<p><b>Níveis 3 a 5.</b> Terras povoadas, com mercados permanentes e pequenas indústrias. As notícias chegam mais rápido, através de bardos. Nobres visitam com frequência e provavelmente haverá pelo menos um grupo de aventureiros residente. A população varia de 5 a 25 mil pessoas</p>
+
+<p><b>Níveis 6 e 7.</b> Terras desamente povoadas, com guildas e indústrias prósperas. Todos os tipos de oessias podem ser encontrados, incluindo alquimistas, escribas e outros tipos mais refinados. Nobres e heróis famosos moram aqui e as pessoas estão acostumadas a interagir com eles. As notícias chegam através de emissários reais ou mesmo através de magos com bolas de cristal - embora mascates e bardos ainda sejam a melhor fonte de fofocas e rumores. A população varia de 50 a 100 mil pessoas.</p>
+    </div>
+
+
+              <strong><h4>Terreno</h4></strong>
+              <p>O tipo de terreno do domínio.</p> 
+              
+              <strong><h4>Corte</h4></strong>
+              <p>O tamanho e a qualidade do centro de poder do domínio.</p> 
+              
+                            <strong><h4>Popularidade</h4></strong>
+              <p>A popularidade do regente frente ao povo do domínio.</p> 
+              
+                            <strong><h4>Fortificação</h4></strong>
+              <p>A capacidade defensiva do domínio</p> 
+              
+                            <strong><h4>Tesouro</h4></strong>
+              <p>O tesouro do domínio, medido em <i>linguotes de ouro</i>(LO). Um LO vale 1.000PP. Embora o tesouro seja medido em linguotes, pode existir na forma de moedas, joias, tapeçarias, sacas de grãos, etc. Você não pode usar LO para comprar comuns, tampouco pode usar PP para gastos de domínio. Para converter dinheiro em lingotes e vice-versa, seja a ação financas, na seção "Turnos de Domínio".</p> 
+              
+                            <strong><h4>Construções</h4></strong>
+              <p>Prédios e outras propriedades que fornecem benefícios para o regente ou para o domínio.</p> 
+                            <strong><h4>Unidades Militares</h4></strong>
+              <p>Também chamadas de tropas, são usadas para proteger o domínio de ataques e para acompanhar o regente em aventuras.</p> 
+              
             </div>
             <div class="col-md-12 post" id="post-3">
               <h2>Post 3</h2>
@@ -61,6 +112,19 @@
           $('#blog-posts .post').hide();
           $('#post-' + postId).show();
         });
+      });
+    </script>
+        <script>
+      const btn = document.querySelector("#btn");
+      const text = document.querySelector("#text");
+      btn.addEventListener("click", () => {
+        if (text.style.display === "none") {
+          text.style.display = "block";
+          btn.textContent = "Ocultar texto";
+        } else {
+          text.style.display = "none";
+          btn.textContent = "Exibir texto";
+        }
       });
     </script>
   </body>
