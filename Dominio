@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Domínios T20</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" id="blog-container">
+          <h1>Domínios para Tormenta 20</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="selector">
+                <select class="selectpicker" id="blog-selector">
+                  <option value="1">Tornando-se Regente</option>
+                  <option value="2">Post 2</option>
+                  <option value="3">Post 3</option>
+                  <option value="4">Post 4</option>
+                  <option value="5">Post 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="blog-posts">
+            <div class="col-md-12 post" id="post-1">
+              <h2>Tornando-se Regente</h2>
+              <p>Um <i>regente</i> é o senhor de um domínio, responsável pela proteção de uma terra e do povo que lá habita, com autoridade sobre ambos. Há duas formas de se tornando um regente: criar um domínio ou conquistar um já existente. Ambos os caminhos envolvem uma aventura - a ascensão de uma campanha e não deve acontecer sem o envolvimento do mestre.</p>
+              <h3>Criando um Domínio</h3>
+              <p>Para criar um domínio, você precisa possuir terras virgens - que pode conquistar como parte de uma aventura. Então deve gastar uma ação de domínio (veja a seguir), 5.000 PP e fazer um teste de Nobreza (CD 20). Se passar, cria um domínio de nível 1,, com corte inexistente, popularidade tolerável e sem tesouro ou construções. Se falhar, pode tentar novamente, gastando mais uma ação de domínio e 5.000 PP.
+              </p>
+            </div>
+            <div class="col-md-12 post" id="post-2">
+              <h2>Post 2</h2>
+              <p>Vestibulum vel lectus vel mi bibendum dapibus sed a neque. Proin dictum, est eu sagittis dapibus, nisi nisi faucibus leo, eu porta magna nibh sed purus. Suspendisse ut semper risus. Donec ut sapien et erat condimentum dictum.</p>
+            </div>
+            <div class="col-md-12 post" id="post-3">
+              <h2>Post 3</h2>
+              <p>Ut tempus dolor risus, sed sollicitudin nunc fermentum ut. In tempus tellus erat, a dapibus orci volutpat quis. Duis aliquam justo vel quam auctor, vel luctus urna ultricies. Curabitur auctor velit vel ligula tristique imperdiet.</p>
+            </div>
+            <div class="col-md-12 post" id="post-4">
+              <h2>Post 4</h2>
+              <p>Phasellus mattis elit a leo eleifend, eget convallis eros ultricies. Integer ultricies, magna et gravida consectetur, justo quam aliquam tellus, ac vestibulum mauris leo vel orci. Ut non bibendum magna, id semper sapien.</p>
+            </div>
+            <div class="col-md-12 post" id="post-5">
+              <h2>Post 5</h2>
+              <p>Vivamus sit amet elit at ipsum sodales porta. Aliquam erat volutpat. Pellentesque auctor ipsum magna, quis congue ligula pretium nec. Nullam id nisi augue. Nulla eu ornare urna. Aenean suscipit est sed tellus gravida, et tempus eros porta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $('#blog-selector').change(function(){
+          var postId = $(this).val();
+          $('#blog-posts .post').hide();
+          $('#post-' + postId).show();
+        });
+      });
+    </script>
+  </body>
+</html>
