@@ -8,9 +8,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<style>
-      #text {
-        display: none;
-      }
+   .divisao {
+    display: none;
+  }
+    table {
+    border-collapse: collapse;
+  }
+
+  table thead tr {
+    background-color: red;
+    color: white;
+  }
+  
+  table td:nth-child(2),
+  table td:nth-child(3) {
+    text-align: center;
+  }
+  
+  table tr:nth-child(2) {
+  background-color: brown;
+  }
+
+  table tr:nth-child(2) {
+    background-color: #ffcc99;
+  }
+  table tr:nth-child(3) {
+    background-color: white;
+  }
+  table tr:nth-child(4) {
+    background-color: #ffcc99;
+  }
+  table tr:nth-child(5) {
+    background-color: white;
+  }
+  table tr:nth-child(6) {
+    background-color: #ffcc99;
+  }
+  table tr:nth-child(7) {
+    background-color: white;
+  }
+  table tr:nth-child(8) {
+    background-color: #ffcc99;
+  }
+  
     </style>
     
   </head>
@@ -53,10 +93,9 @@
               
               <strong><h4>Nível</h4></strong>
               <p>Uma medida geral da população, do desenvolvimento e da prosperidade do domínio.</p>
-<button id="btn">Exibir texto</button><br>
-    <div id="text">
-      
-<h3><u>Níveis de Domínio</u></h3>
+<button id="botao1">Níveis de Domínios</button>
+    <div id="divisao1" class="divisao">
+    <h3><u>Níveis de Domínio</u></h3>
 <p>O nível de um domínio define quanto você ganha com impostos e seu máximo de construçlões, e opera em uma escala de 1 a 7. Você pode subir o nível do domínio com a ação governar.</p>
 <p><b>Nível 0</b>.Terras ermas, desertas ou abandonadas, sem população residente. Não constitui um domínio.</p>
 
@@ -66,10 +105,77 @@
 
 <p><b>Níveis 6 e 7.</b> Terras desamente povoadas, com guildas e indústrias prósperas. Todos os tipos de oessias podem ser encontrados, incluindo alquimistas, escribas e outros tipos mais refinados. Nobres e heróis famosos moram aqui e as pessoas estão acostumadas a interagir com eles. As notícias chegam através de emissários reais ou mesmo através de magos com bolas de cristal - embora mascates e bardos ainda sejam a melhor fonte de fofocas e rumores. A população varia de 50 a 100 mil pessoas.</p>
     </div>
-
+	
 
               <strong><h4>Terreno</h4></strong>
               <p>O tipo de terreno do domínio.</p> 
+              
+             <button id="botao2">Terrenos</button>
+             <div id="divisao2" class="divisao">
+             <h3><u>Terreno</u></h3>
+<p>O terreno do domínio. Outros tipos podem estar presentes, mas este será o principal. Por exemplo, um domínio de planície pode ter bosques e colinas, mas será principalmente plano e descampado, assim como um domínio de floresta pode ter clareiras, mas será sua maioria tomado por árvores e vegetação.</p>
+<p>O terreno limita o nível máximo e o potencial mágico do domínio, além de ser requisito para certas construções. A tabela abaixo traz os tipos de terrenos e os limites de cada um.</p>
+
+Tabela: Terrenos
+             
+             
+             	<table border="1">
+  <thead>
+    <tr>
+      <th>Terreno</th>
+      <th>Nível Máximo</th>
+      <th>Potencial Mágico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Colinas</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Deserto</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Floresta</td>
+      <td>4 (6 para elfos)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Montanha</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Pântano</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Planície</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Subterrâneo</td>
+      <td>2 (6 para anões)</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Rio ou mar</td>
+      <td>+1</td>
+      <td>-</td>
+	</tr>
+    <tr>
+      <td>Elemento místico*</td>
+      <td>-</td>
+      <td>+1</td>
+	</tr>
+</table>
+*Como um cemitério de dragões, um bosque de fadas...
+             </div>
               
               <strong><h4>Corte</h4></strong>
               <p>O tamanho e a qualidade do centro de poder do domínio.</p> 
@@ -114,18 +220,24 @@
         });
       });
     </script>
-        <script>
-      const btn = document.querySelector("#btn");
-      const text = document.querySelector("#text");
-      btn.addEventListener("click", () => {
-        if (text.style.display === "none") {
-          text.style.display = "block";
-          btn.textContent = "Ocultar texto";
-        } else {
-          text.style.display = "none";
-          btn.textContent = "Exibir texto";
-        }
-      });
-    </script>
+    <script>
+     document.getElementById("botao1").onclick = function() {
+    var divisao1 = document.getElementById("divisao1");
+    if (divisao1.style.display === "none") {
+      divisao1.style.display = "block";
+    } else {
+      divisao1.style.display = "none";
+    }
+  }
+  
+  document.getElementById("botao2").onclick = function() {
+    var divisao2 = document.getElementById("divisao2");
+    if (divisao2.style.display === "none") {
+      divisao2.style.display = "block";
+    } else {
+      divisao2.style.display = "none";
+    }
+  }
+	</script>
   </body>
 </html>
