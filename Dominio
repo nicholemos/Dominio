@@ -65,7 +65,7 @@
                 <select class="selectpicker" id="blog-selector">
                   <option value="1">Tornando-se Regente</option>
                   <option value="2">Características de Domínios</option>
-                  <option value="3">Post 3</option>
+                  <option value="3">Construções</option>
                   <option value="4">Post 4</option>
                   <option value="5">Post 5</option>
                 </select>
@@ -119,7 +119,7 @@
 Tabela: Terrenos
              
              
-             	<table border="1">
+<table border="1">
   <thead>
     <tr>
       <th>Terreno</th>
@@ -178,13 +178,56 @@ Tabela: Terrenos
              </div>
               
               <strong><h4>Corte</h4></strong>
-              <p>O tamanho e a qualidade do centro de poder do domínio.</p> 
-              
+              <p>O tamanho e a qualidade do centro de poder do domínio.</p>
+			
+   		<button id="botao3">Corte</button>
+        <div id="divisao3" class="divisao">
+
+
+<h3><u>Corte</u></h3>
+<p>O lugar de onde você governa seu domínio. Existem quatro categorias de corte, que definem quão bem ela funciona (e quão bem você vive). Categorias baixas impõem penalidades em testes de ações de domínio; já categorias altas fornecem acesso a conselheiros e ações extras. Cortes possuem um custo de manutenção, definido pela categoria. O custo deve ser pago a cada turno de domínio.</p>
+<p><b>Inexistente.</b>. Você governa o domínio onde e quando consegue — nos fundos de uma taverna, em cima de uma carroça... Possui a ajuda de amigos ou, no máximo, servos pagos de seu próprio bolso. <i>Manutenção:</i> 0 LO. <i>–2 em ações de domínio.</i></p>
+
+<p><b>Pobre.</b> Base de operações equivalente a um salão, com alguns servos (criado, cozinheiro, escriba). <i>Manutenção:</i> 1 LO. <i>Sem modificadores.</i></p>
+
+<p><b>Comum.</b> A corte possui uma estrutura completa, com salas de audiência, escritórios e diversos servos, incluindo músicos, tutores, caçadores etc. Pode sediar reuniões, cerimônias e eventuais bailes. Os agentes e servos do regente são conhecidos pelo povo e as pessoas comuns interagem mais com eles do que com o próprio regente em questões do dia a dia. <i>Manutenção:</i> 3 LO. <i>Fornece um conselheiro.</i></p>
+
+<p><b>Rica.</b> Mais do que uma única sede, a corte é uma rede de prédios espalhados pelo domínio, com um exército de servos e sua própria burocracia. O
+povo trata os membros da corte como figuras de autoridade e interage com o regente apenas em situações urgentes.  <i>Manutenção:</i> 5 LO. <i>Fornece três
+conselheiros e uma ação de domínio extra por turno.</i></p>
+</div>
+
+
                             <strong><h4>Popularidade</h4></strong>
               <p>A popularidade do regente frente ao povo do domínio.</p> 
+
+		<button id="botao4">Popularidade</button>
+        <div id="divisao4" class="divisao">
+        	<h3><u>Popularidade</u></h3>
+<p>Existem cinco categorias de popularidade. De acordo com a categoria, você pode receber um modificador em testes de ações de domínio.</p>
+<p><b>Adorado.</b>. Você é amado por seus súditos. Se caminhar pelas ruas, as pessoas irão gritar seu nome e lhe dar bolos de presente. <i>+2 em ações de domínio.</i></p>
+
+<p><b>Popular.</b> Você é estimado pelo povo. Se caminhar pelas ruas, as pessoas irão cumprimentá-lo com afeição e deferência. <i>+1 em ações de domínio</i></p>
+
+<p><b>Tolerado.</b> Os habitantes do domínio o tratam com o respeito devido. Se caminhar pelas ruas, alguns irão agradecer pela última obra pública, enquanto outros irão reclamar dos impostos.<i>Sem modificador.</i></p>
+
+<p><b>Impopular.</b> As pessoas cumprem seus decretos de má vontade e fazem piadas com seu nome. Se caminhar pelas ruas, receberá reclamações e olhares feios.<i>–2 em ações de domínio.</i></p>
+
+<p><b>Odiado.</b> O povo considera-o um tolo, um tirano ou ambos. Caminhar pelas ruas não é uma boa ideia, mas se fizer isso, as pessoas irão xingá-lo e arremessar ovos podres em você. <i>–5 em ações de domínio. Se a popularidade baixar para menos do que odiado, uma revolta ocorre.</i></p>
+        </div>
+              
               
                             <strong><h4>Fortificação</h4></strong>
               <p>A capacidade defensiva do domínio</p> 
+              
+		<button id="botao5">Fortificação</button>
+        <div id="divisao5" class="divisao">
+        <h3><u>Fortificação</u></h3>
+<p>Uma medida das defesas do domínio contra bandidos, exércitos inimigos e monstros. É definido pelas construções defensivas do domínio, como torres de vigia, muralhas, fossos e castelos.</p>
+<p>É igual à soma do valor de Fortificação de todas as construções e é aplicada como um bônus nos testes de Guerra do regente feitos para defender o domínio de ataques.</p>
+
+        </div>              
+              
               
                             <strong><h4>Tesouro</h4></strong>
               <p>O tesouro do domínio, medido em <i>linguotes de ouro</i>(LO). Um LO vale 1.000PP. Embora o tesouro seja medido em linguotes, pode existir na forma de moedas, joias, tapeçarias, sacas de grãos, etc. Você não pode usar LO para comprar comuns, tampouco pode usar PP para gastos de domínio. Para converter dinheiro em lingotes e vice-versa, seja a ação financas, na seção "Turnos de Domínio".</p> 
@@ -195,10 +238,246 @@ Tabela: Terrenos
               <p>Também chamadas de tropas, são usadas para proteger o domínio de ataques e para acompanhar o regente em aventuras.</p> 
               
             </div>
+            
+            
+            
+            
             <div class="col-md-12 post" id="post-3">
-              <h2>Post 3</h2>
-              <p>Ut tempus dolor risus, sed sollicitudin nunc fermentum ut. In tempus tellus erat, a dapibus orci volutpat quis. Duis aliquam justo vel quam auctor, vel luctus urna ultricies. Curabitur auctor velit vel ligula tristique imperdiet.</p>
+              <h2>Construções</h2>
+              <p>Para adquirir uma construção, veja a seção “Turnos de Domínio”. Você só pode erguer construções cujos pré-requisitos cumpra, e pode ter um número máximo de construções igual a três vezes o nível de seu domínio (assim, um domínio
+de nível 1 pode ter no máximo três construções, um domínio de nível 2 pode ter no máximo seis e assim por diante). A perícia utilizada para cada construção, assim como seu custo, são indicados na Tabela Abaixo. Os efeitos da construção se aplicam imediatamente.</p>
             </div>
+            <h2><u>Fortificação</u></h2>
+<p>Uma medida das defesas do domínio contra bandidos, exércitos inimigos e monstros. É definido pelas construções defensivas do domínio, como torres de vigia, muralhas, fossos e castelos.</p>
+
+<h3><u>Lista de Construções</u></h3>
+<p><b>Abadia.</b> Um centro de estudos repleto de livros sagrados que podem ensinar-lhe os mistérios da fé. Você aprende uma magia divina de sua lista.</p>
+
+<table>
+  <tr style="background-color: brown">
+    <th style="width: 35% text-align: left; color: white">Construção</th>
+    <th style="width: 10%;  text-align: left; color: white">Custo</th>
+    <th style="width: 55%; text-align: left; color: white">Benefício</th>
+  </tr>
+  <tr style="border: 0; background-color: lightgray">
+    <td style="text-align: left"></td>
+    <td style="text-align: left"></td>
+    <td style="text-align: left">Perícia Necessária: Nobreza</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Adega</td>
+    <td style="text-align: left">4 LO</td>
+    <td style="text-align: left">+3 pontos de mana</td>
+  </tr>
+  <tr style="background-color: white">
+    <td style="text-align: left">Aqueduto</td>
+    <td style="text-align: left">15 LO</td>
+    <td style="text-align: left">Rola duas vezes para encontros aleatórios e escolhe o melhor</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Banhos públicos</td>
+    <td style="text-align: left">7 LO</td>
+    <td style="text-align: left">+5 em testes de governar</td>
+  </tr>
+  <tr style="background-color: white">
+    <td style="text-align: left">Biblioteca</td>
+    <td style="text-align: left">10 LO</td>
+    <td style="text-align: left">Torna-se treinado em uma perícia</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Universidade</td>
+    <td style="text-align: left">25 LO</td>
+    <td style="text-align: left">Ganha um poder geral</td>
+  </tr>
+  <tr style="background-color: white">
+    <td style="text-align: left">Botica</td>
+    <td style="text-align: left">3 LO</td>
+    <td style="text-align: left">+1 em Fortitude</td>
+  </tr>
+   <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Cabana de caça</td>
+    <td style="text-align: left">2 LO</td>
+    <td style="text-align: left">Dano de Marca da Presa aumenta em um passo</td>
+  </tr>
+  <tr style="background-color: white">
+    <td style="text-align: left">Cadafalso</td>
+    <td style="text-align: left">1 LO</td>
+    <td style="text-align: left">+2 em Intimidação</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Campo de treinamento</td>
+    <td style="text-align: left">2 LO</td>
+    <td style="text-align: left">Recruta milícia</td>
+  </tr>
+  <tr>
+    <td style="text-align: left">Corte de lei</td>
+    <td style="text-align: left">5 LO</td>
+    <td style="text-align: left">Rola dois dados em testes de resistência contra efeitos mentais</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Curtume</td>
+    <td style="text-align: left">4 LO</td>
+    <td style="text-align: left">+2 na Defesa de capangas</td>
+  </tr>
+  <tr>
+    <td style="text-align: left">Estátua</td>
+    <td style="text-align: left">2 LO</td>
+    <td style="text-align: left">Aumenta gasto máximo de PM em +1</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Estrada</td>
+    <td style="text-align: left">10 LO</td>
+    <td style="text-align: left">+2 em Iniciativa</td>
+  </tr>
+  <tr>
+    <td style="text-align: left">Estalagem</td>
+    <td style="text-align: left">8 LO</td>
+    <td style="text-align: left">Uma ação padrão adicional, uma vez por aventura</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: left">Fazenda</td>
+    <td style="text-align: left">2 LO</td>
+    <td style="text-align: left">+1d6–2 LO por turno</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Celeiro</td>
+    <td style="text-align: left">3 LO</td>
+    <td style="text-align: left">Elimina penalidade no ganho da fazenda</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Moinho</td>
+    <td style="text-align: left">5 LO</td>
+    <td style="text-align: left">Muda dado de ganho da fazenda para d8</td>
+  </tr>
+  <tr>
+    <td style="text-align: left">Feira</td>
+    <td style="text-align: left">5 LO</td>
+    <td style="text-align: left">+1d4 LO por turno</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Mercado</td>
+    <td style="text-align: left">10 LO</td>
+    <td style="text-align: left">Muda ganho da feira para 1d8 LO</td>
+  </tr>
+  <tr>
+    <td style="text-align: left">Forja</td>
+    <td style="text-align: left">6 LO</td>
+    <td style="text-align: left">+1 no dano de capangas</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Forte</td>
+    <td>10 LO</td>
+    <td>Fortificação +2</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Armorial</td>
+    <td>3 LO</td>
+    <td>Diminui custo de Orgulho em –1 PM</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Castelo</td>
+    <td>25 LO</td>
+    <td>Muda fortificação do castelo para +10</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Ordem de cavalaria</td>
+    <td>20 LO</td>
+    <td>Diminui custo de Baluarte em –1 PM</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Sala do trono</td>
+    <td>5 LO</td>
+    <td>+2 em Diplomacia</td>
+  </tr>
+  <tr>
+    <td>Madeireira</td>
+    <td>15 LO</td>
+    <td>+1d8 LO, –10% em eventos, apenas florestas</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Masmorra</td>
+    <td>20 LO</td>
+    <td>+2 na CD de habilidades de classe (exceto magias)</td>
+  </tr>
+  <tr>
+    <td>Mina</td>
+    <td>20 LO</td>
+    <td>+1d12 LO; –20% em eventos, apenas montanhas e subterrâneos</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Obra de arte</td>
+    <td>3 LO</td>
+    <td>+1 em Vontade</td>
+  </tr>
+  <tr>
+    <td>Oficina</td>
+    <td>2 LO</td>
+    <td>+2 em Ofício</td>
+  </tr>
+<tr style="background-color: #ffcc99">    
+	<td style="text-align: center">Guilda de artesãos</td>
+    <td>15 LO</td>
+    <td>Adiciona uma melhoria a um item, uma vez por aventura</td>
+  </tr>
+  <tr>
+    <td>Palácio</td>
+    <td>100 LO</td>
+    <td>Aumenta limite de parceiros em +1</td>
+  </tr>
+<tr style="background-color: #ffcc99">    <td>Paliçada</td>
+    <td>4 LO</td>
+    <td>Fortificação +2</td>
+  </tr>
+  <tr>
+<td style="text-align: center">Muralha</td>
+  <td>10 LO</td>
+  <td>Muda fortificação da paliçada para +5</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td>Poço de piche</td>
+  <td>6 LO</td>
+  <td>Bônus em alquímicos, apenas pântanos</td>
+</tr>
+<tr>
+    <td>Porto</td>
+    <td>10 LO</td>
+    <td>Ganha 1d6 LO por turno</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Docas</td>
+    <td>4 LO</td>
+    <td>Bônus de Audácia aumenta em +1 e pode ser usado em ataques</td>
+  </tr>
+  <tr>
+    <td>Povoado afastado</td>
+    <td>4 LO</td>
+    <td>Permite uma construção de outro terreno</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Quarto luxuoso</td>
+    <td>2 LO</td>
+    <td>+5 pontos de vida</td>
+  </tr>
+  <tr>
+    <td>Torre de vigia</td>
+    <td>2 LO</td>
+    <td>+2 em Percepção</td>
+  </tr>
+  <tr style="border: 0; background-color: lightgray">
+    <td style="text-align: left"></td>
+    <td style="text-align: left"></td>
+    <td style="text-align: left">Perícia Necessária: Guerra</td>
+  </tr>
+  
+</table>
+
+
+
+
+
+            
+            
+            
             <div class="col-md-12 post" id="post-4">
               <h2>Post 4</h2>
               <p>Phasellus mattis elit a leo eleifend, eget convallis eros ultricies. Integer ultricies, magna et gravida consectetur, justo quam aliquam tellus, ac vestibulum mauris leo vel orci. Ut non bibendum magna, id semper sapien.</p>
@@ -236,6 +515,33 @@ Tabela: Terrenos
       divisao2.style.display = "block";
     } else {
       divisao2.style.display = "none";
+    }
+  }
+  
+   document.getElementById("botao3").onclick = function() {
+    var divisao3 = document.getElementById("divisao3");
+    if (divisao3.style.display === "none") {
+      divisao3.style.display = "block";
+    } else {
+      divisao3.style.display = "none";
+    }
+  }
+  
+   document.getElementById("botao4").onclick = function() {
+    var divisao4 = document.getElementById("divisao4");
+    if (divisao4.style.display === "none") {
+      divisao4.style.display = "block";
+    } else {
+      divisao4.style.display = "none";
+    }
+  }
+  
+    document.getElementById("botao5").onclick = function() {
+    var divisao5 = document.getElementById("divisao5");
+    if (divisao5.style.display === "none") {
+      divisao5.style.display = "block";
+    } else {
+      divisao5.style.display = "none";
     }
   }
 	</script>
