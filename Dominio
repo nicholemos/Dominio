@@ -259,7 +259,7 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
     <th style="width: 10%;  text-align: left; color: white">Custo</th>
     <th style="width: 55%; text-align: left; color: white">Benefício</th>
   </tr>
-  <tr style="border: 0; background-color: lightgray">
+  <tr style="border: 0; background-color: salmon">
     <td style="text-align: left"></td>
     <td style="text-align: left"></td>
     <td style="text-align: left">Perícia Necessária: Nobreza</td>
@@ -463,12 +463,227 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
     <td>2 LO</td>
     <td>+2 em Percepção</td>
   </tr>
-  <tr style="border: 0; background-color: lightgray">
+  <tr style="border: 0; background-color: salmon">
     <td style="text-align: left"></td>
     <td style="text-align: left"></td>
     <td style="text-align: left">Perícia Necessária: Guerra</td>
   </tr>
-  
+  <tr>
+    <td>Canil</td>
+    <td>4 LO</td>
+    <td>Recruta cães de guerra</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Estrebaria</td>
+    <td>10 LO</td>
+    <td>Recebe montaria</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Pista de justas</td>
+    <td>10 LO</td>
+    <td>Recruta cavaleiros</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Pátio de treinamento</td>
+    <td>6 LO</td>
+    <td>+1 em testes de ataque (ou uma proficiência)</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Liças</td>
+    <td>2 LO</td>
+    <td>Aumenta bônus de Fúria em +1</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Salão de guerreiros</td>
+    <td>4 LO</td>
+    <td>+1 ponto de dano por dado de Ataque Disciplinado</td>
+  </tr>
+<tr>
+    <td>Pista de arquearia</td>
+    <td>2 LO</td>
+    <td>Recruta arqueiros</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Posto de pedágio</td>
+    <td>2 LO</td>
+    <td>Aumenta ganho de impostos altos (requisito adicional: estradas)</td>
+  </tr>
+<tr>
+  <td>Sala de mapas</td>
+  <td>8 LO</td>
+  <td>Troca de posição na iniciativa com um aliado</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td>Torre de guarnição</td>
+  <td>5 LO</td>
+  <td>Recruta guardas</td>
+</tr>
+ <tr style="border: 0; background-color: salmon">
+    <td style="text-align: left"></td>
+    <td style="text-align: left"></td>
+    <td style="text-align: left">Perícia Necessária: Enganação</td>
+  </tr>
+<tr>
+    <td>Bazar</td>
+    <td>5 LO</td>
+    <td>+10% ao negociar itens comuns</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Caravançará</td>
+    <td>10 LO</td>
+    <td>Cria caravanas (requisito adicional: estradas)</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Empório</td>
+    <td>10 LO</td>
+    <td>+10% ao negociar um item especial, uma vez por aventura</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Esconderijo</td>
+    <td>8 LO</td>
+    <td>Recruta bandidos</td>
+  </tr>
+  <tr>
+    <td>Taverna</td>
+    <td>10 LO</td>
+    <td>Interrogar como ação livre, uma vez por aventura</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Antro de jogatina</td>
+    <td>10 LO</td>
+    <td>+2 em Enganação</td>
+  </tr>
+<tr>
+  <td style="text-align: center">Arena clandestina</td>
+  <td>15 LO</td>
+  <td>Ganha Ataque Furtivo</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td style="text-align: center">Casa de prazeres</td>
+  <td>10 LO</td>
+  <td>Recebe um favor, uma vez por aventura</td>
+</tr>
+<tr>
+  <td style="text-align: center">Palco</td>
+  <td>4 LO</td>
+  <td>+2 em Atuação</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td>Trupe de malabaristas</td>
+  <td>4 LO</td>
+  <td>+1 em Reflexos</td>
+</tr>
+ <tr style="border: 0; background-color: salmon">
+    <td style="text-align: left"></td>
+    <td style="text-align: left"></td>
+    <td style="text-align: left">Perícia Necessária: Religião</td>
+  </tr>
+<tr>
+    <td>Abadia</td>
+    <td>12 LO</td>
+    <td>Aprende uma magia divina</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Capela</td>
+    <td>5 LO</td>
+    <td>+2 em Religião</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">Relicário</td>
+    <td>8 LO</td>
+    <td>+5 num teste de resistência, uma vez por aventura</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Mosteiro</td>
+    <td>15 LO</td>
+    <td>+3 pontos de mana (apenas para conjuradores divinos)</td>
+  </tr>
+  <tr>
+    <td>Santuário</td>
+    <td>4 LO</td>
+    <td>Fornece um poder de druida</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Bosque sagrado</td>
+    <td>5 LO</td>
+    <td>Um companheiro animal não conta no limite de parceiros</td>
+  </tr>
+<tr>
+<td style="text-align: center">Círculo de pedras</td>
+  <td>10 LO</td>
+  <td>Aumenta bônus de atributo de Forma selvagem em +2</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td>Templo</td>
+  <td>15 LO</td>
+  <td>Fornece um poder de clérigo</td>
+</tr>
+<tr>
+<td style="text-align: center">Altar</td>
+  <td>3 LO</td>
+  <td>Canalizar energia aumenta para d8</td>
+</tr>
+<tr style="background-color: #ffcc99">
+<td style="text-align: center">Catedral</td>
+  <td>20 LO</td>
+  <td>Dobra os efeitos de uma missa</td>
+</tr>
+ <tr style="border: 0; background-color: salmon">
+    <td style="text-align: left"></td>
+    <td style="text-align: left"></td>
+    <td style="text-align: left">Perícia Necessária: Misticismo</td>
+ </tr>
+ <tr>
+    <td>Estante de pergaminhos</td>
+    <td>12 LO</td>
+    <td>Aprende uma magia arcana</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td>Poço de adivinhação</td>
+    <td>10 LO</td>
+    <td>Rola 2d20 num teste e usa o melhor, uma vez por aventura</td>
+  </tr>
+  <tr>
+    <td>Salão dos mistérios</td>
+    <td>15 LO</td>
+    <td>+2 em Misticismo</td>
+  </tr>
+  <tr style="background-color: #ffcc99">
+    <td style="text-align: center">Pedra de maldições</td>
+    <td>6 LO</td>
+    <td>Alvo sofre –5 em sua próxima resistência, uma vez por aventura</td>
+  </tr>
+  <tr>
+    <td>Sala de meditação</td>
+    <td>5 LO</td>
+    <td>+3 pontos de mana (apenas para conjuradores arcanos)</td>
+  </tr>
+ <tr style="background-color: #ffcc99">
+  <td>Torre de estudos</td>
+  <td>10 LO</td>
+  <td>Fornece um poder de mago</td>
+</tr>
+<tr>
+  <td style="text-align: center">Arena arcana</td>
+  <td>6 LO</td>
+  <td>+1 ponto de dano por dado de Raio Arcano</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td style="text-align: center">Câmara mística</td>
+  <td>15 LO</td>
+  <td>Pode usar um poder de aprimoramento, uma vez por aventura</td>
+</tr>
+<tr>
+  <td style="text-align: center">Círculo de poder</td>
+  <td>10 LO</td>
+  <td>+1 na CD de magias arcanas</td>
+</tr>
+<tr style="background-color: #ffcc99">
+  <td style="text-align: right">Linhas místicas</td>
+  <td>25 LO</td>
+  <td>Recuperação de PM aumenta em +1/nível</td>
+</tr>
+
 </table>
 
 
