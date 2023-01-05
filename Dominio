@@ -250,10 +250,9 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
             <h2><u>Fortificação</u></h2>
 <p>Uma medida das defesas do domínio contra bandidos, exércitos inimigos e monstros. É definido pelas construções defensivas do domínio, como torres de vigia, muralhas, fossos e castelos.</p>
 
-<h3><u>Lista de Construções</u></h3>
-<p><b>Abadia.</b> Um centro de estudos repleto de livros sagrados que podem ensinar-lhe os mistérios da fé. Você aprende uma magia divina de sua lista.</p>
-
-<table>
+<button id="botao6">Exibir Tabela</button>
+        <div id="divisao6" class="divisao">
+        <table>
   <tr style="background-color: brown">
     <th style="width: 35% text-align: left; color: white">Construção</th>
     <th style="width: 10%;  text-align: left; color: white">Custo</th>
@@ -683,15 +682,165 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
   <td>25 LO</td>
   <td>Recuperação de PM aumenta em +1/nível</td>
 </tr>
-
 </table>
+</div>
+<br><br>
 
+<h3><u>Lista de Construções</u></h3>
 
+<p><b>Abadia.</b> Um centro de estudos repleto de livros sagrados que podem ensinar-lhe os mistérios da fé. Você aprende uma magia divina de sua lista.</p>
 
+<p><b>Adega.</b> Um espaço no porão com barris e garrafas de vinhos selecionados. Usufruir de uma adega fornece +3 pontos de mana. </p>
 
+<p><b>Altar.</b> Esta mesa de pedra esculpida com um símbolo sagrado é o centro do culto em um templo, o lugar por onde a energia divina é focalizada. Quando usa a habilidade canalizar energia, o tipo de dado que você rola muda para d8. <em>Pré-requisito:</em> templo.</p>
 
-            
-            
+<p><b>Antro de Jogatina.</b> Uma sala discreta, onde muito ouro pode ser ganho e muito mais que ouro pode ser perdido. Frequentá-la melhora seus blefes, fornecendo +2 em Enganação. <em>Pré-requisito:</em> Taverna.</p>
+
+<p><b>Aqueduto.</b> Este canal construído sobre arcos de pedra com dezenas de metros de altura traz água para o coração do domínio. Quando você rola encontros aleatórios, rola duas vezes e escolhe uma delas.</p>
+
+<p><b>Arena Arca na.</b> Com espelhos capazes de conter efeitos destrutivos, esta sala é feita para treinar ataques mágicos. Você recebe +1 no dano de cada dado de seu Raio Arcano. <em>Pré-requisito:</em> salão dos mistérios.</p>
+
+<p><b>Arena Clandestina.</b> Localizada no porão de uma Taverna, num celeiro abandonado ou em outro lugar discreto, esta arena abriga lutas ilegais, nas quais a única regra é que não há regras. Frequentá-la ensina muito sobre golpes baixos, fornecendo Ataque Furtivo +1d6 (cumulativo). <em>Pré-requisito:</em> Taverna.</p>
+
+<p><b>Armorial.</b> Esta sala repleta de brasões heráldicos e livros de genealogia ensina a importância de linhagens distintas. O custo de Orgulho diminui em –1 PM. <em>Pré-requisito:</em> forte.<p>
+
+<p><b>Banhos Públicos.</b> Estas fontes termais trazem conforto e higiene aos habitantes do domínio. Você recebe +5 em testes da ação governar.</p>
+
+<p><b>Bazar.</b> Uma loja de artigos variados, como peles, sacas de grão e ferramentas. Quando compra ou vende itens mundanos (não especiais e não mágicos), você muda o preço em 10% a seu favor.</p>
+
+<p><b>Biblioteca.</b> Com uma coleção de pergaminhos, livros e tomos variados, este lugar tem muito a ensinar. Você se torna treinado em uma perícia.</p>
+
+<p><b>Bosque Sagrado.</b> Esta mata isolada possui árvores entalhadas com runas. Se você possuir um ou mais companheiros animais, um deles não conta em seu limite de parceiros. <em>Pré-requisito:</em> santuário.</p>
+
+<p><b>Botica.</b> Esta cabana de madeira possui diversas ervas medicinais, que se consumidas com sabedoria fortalecem sua saúde. Fornece +1 em Fortitude.</p>
+
+<p><b>Cabana de Caça.</b> Esta choupana permite que você passe dias nos ermos, treinando suas habilidades de caça. O dano de sua Marca da Presa aumenta em um passo (por exemplo, de 1d12 para 3d6).</p>
+
+<p><b>Cadafalso.</b> Um palanque de madeira para a execução de condenados. Fornece +2 em Intimidação - todos levam a sério um regente acostumado a executar pessoas em praça pública.</p>
+
+<p><b>Campo de Treinamento.</b> Um descampado próximo, onde camponeses podem treinar manobras militares básicas. Permite recrutar milícias.</p>
+
+<p><b>Canil.</b> Em troca de pulgas e cheiro forte, esta construção fornece companheiros tão ferozes quanto leais. Permite recrutar cães de guerra.</
+
+<p><b>Capela.</b> Uma pequena construção voltada para preces. Fornece +2 em Religião.</p>
+
+<p><b>Câmara Mística.</b> Uma sala onde espirais de puro poder flutuam, esperando para serem invocadas. Uma vez por aventura, você pode usar um poder de aprimoramento, quer o possua ou não, sem pagar PM por isso. <em>Pré-requisito:</em> torre de estudos.</p>
+
+<p><b>Caravançará.</b> Um pátio cercado de hospedarias e armazéns, onde caravanas se formam. Você pode gastar uma ação de domínio e até 1d4 LO por nível de domínio para criar uma caravana. Na sua próxima etapa de impostos, faça um teste de Nobreza contra CD 20 + a quantidade de dados gastos (por exemplo, se você gastou 3d4 LO na caravana, a CD será 23). Se você passar, a caravana volta e você recebe 1d4+1 LO por dado gasto. Se passar por 5 ou mais, recebe 1d6+1 LO por dado. Se passar por 10 ou mais, recebe 2d4+1 LO por dado. Se você falhar, a caravana se perdeu e você não recebe nada. <em>Pré-requisito:</em> bazar, estrada.</p>
+ 
+<p><b>Casa de Prazeres.</b> Uma casa luxuosa, onde os sonhos de uma vida podem ser comprados, pelo menos por algumas horas. Uma vez por aventura, você pode usar a habilidade Favor (veja a página 59). Se já possuí-la, recebe +5 no teste de Diplomacia para usá-la. <em>Pré-requisito:</em> Taverna.</p>
+
+<p><b>Castelo.</b> Esta construção imponente é protegida por fossos, muralhas e torres. Normalmente, seu pátio e térreo são abertos ao público, enquanto os andares superiores servem de residência para o regente, sua família e seus conselheiros. Muda o bônus de fortificação do forte para +5. <em>Pré-requisito:</em> forte.</p>
+
+<p><b>Catedral.</b> Esta igreja grandiosa sedia grandes ritos. Uma vez por dia, os efeitos de uma de suas missas são dobrados. <em>Pré-requisito:</em> templo.</p>
+
+<p><b>Celeiro.</b> Este depósito garante que sua produção agrícola não se perca. Elimina a penalidade no ganho da fazenda (se torna 1d6 LO, ou 1d8 LO, se você possuir um moinho). <em>Pré-requisito:</em> fazenda.</p>
+
+<p><b>Círculo de Pedras.</b> Um círculo de pedras dispostas de forma a canalizar os poderes da natureza. Quando você usa Forma Selvagem, aumenta um dos bônus de atributos em +2. <em>Pré-requisito:</em> santuário.</p>
+
+<p><b>Círculo de Poder.</b> Um círculo de runas esculpidas no chão. A CD para resistir a suas magias arcanas aumenta em +1.</p>
+
+<p><b>Corte de Lei.</b> Uma sala ou prédio onde o regente julga disputas entre seus súditos. Fazer isso o torna mais capaz de discernir o certo do errado. Quando faz um teste de resistência contra um efeito mental, você rola dois dados e usa o melhor.</p>
+
+<p><b>Curtume.</b> Este estabelecimento fornece couro curtido, útil para a produção de armaduras. Seus capangas recebem +2 na Defesa.</p>
+
+    <p><b>Doca s.</b> Aqui marujos se reúnem, contando histórias de aventuras. Sejam verdadeiras, exageradas ou mentirosas, alimentam a sede de façanhas de quem as escuta. Você recebe um poder de bucaneiro.</p>
+    
+    <p><b>Empório.</b> Uma grande loja onde tudo pode ser encontrado — com exceção, talvez, de negócios justos. Uma vez por aventura, você pode comprar ou vender um item especial e mudar o preço em 10% a seu favor. <i>Pré-requisito:</i> bazar.</p>
+    
+    <p><b>Esconderijo.</b> Um covil de bandoleiros. Permite que você recrute bandidos.</p>
+    
+    <p><b>Estalagem.</b> Uma hospedaria onde lendas e canções são compartilhadas, fazendo com que todos se sintam mais heroicos. Uma vez por aventura, você pode realizar uma ação padrão adicional. <i>Pré-requisito:</i> estrada.</p>
+
+<p><b>Estante de Pergaminhos.</b> Esta coleção de textos místicos permite que você descubra novos mistérios. Você aprende uma magia arcana de sua lista.</p>
+
+<p><b>Estátua.</b> Este monumento de um herói do passado — ou do próprio regente, se ele não for modesto — o impulsiona a atos impressionantes. O máximo de pontos de mana que você pode gastar em uma habilidade passa a ser seu nível +1.</p>
+
+<p><b>Estrada.</b> Este caminho de terra possui valetas para evitar que se transforme num lamaçal durante chuvas e cruza todo o domínio. O costume de viajar o torna habituado a reagir rapidamente. Fornece +2 em Iniciativa.</p>
+
+<p><b>Estrebaria.</b> Aqui os melhores animais são selecionados e treinados, garantindo que você sempre tenha uma montaria à altura. Você recebe um cavalo de guerra veterano. Caso já possua, ele muda para mestre ou, se já o for, recebe os benefícios de outro tipo de parceiro iniciante (aprovado pelo mestre).</p>
+
+<p><b>Fazenda.</b> Este campo arado aumenta a produção agrícola do domínio e, consequentemente, a arrecadação de impostos. Fornece 1d6–2 LO por turno. Como secas, tempestades e pestes podem estregar a colheita, é possível que a fazenda dê prejuízo (mas veja a construção celeiro).</p>
+
+<p><b>Feira.</b> Um espaço no centro da comunidade onde, uma vez por semana, fazendeiros trazem suas verduras, artesãos trazem seus produtos e todos trazem seu dinheiro — uma parte do qual, graças aos impostos cobrados, fica com você. Fornece 1d4 LO por turno.</p>
+
+<p><b>Forja.</b> Possuir uma forja garante que as armas de suas tropas estejam sempre afiadas. Seus capangas recebem +1 nas rolagens de dano.</p>
+
+<p><b>Forte.</b> Uma torre de madeira erguida em uma posição elevada. O forte é um símbolo de poder, a sede da corte, a residência do regente e, acima de tudo, o lugar para onde todos correm em caso de ataque. Fornece +2 em Fortificação.</p>
+
+<p><b>Liças.</b> Um campo de areia onde combates brutais são travados. Seja por diversão, seja por treinamento, participar das liças torna qualquer um mais feroz. O bônus que você recebe nos testes de ataque e rolagens de dano quando usa Fúria aumenta em +1. <i>Pré-requisito:</i> pátio de treinamento.</p>
+
+<p><b>Linhas Místicas.</b> Você acessa linhas de energia que cruzam a terra e as canaliza para seu domínio, mantendo um fluxo constante de poder mágico. Sempre que descansa, sua recuperação de pontos de mana aumenta em +1 por nível.</p>
+
+<p><b>Madeireira.</b> Um campo encravado na mata para extração de madeira. Fornece 1d8 LO por turno, mas pode enfurecer animais e espíritos da natureza — fornece –10% nas rolagens de eventos aleatórios. <i>Pré-requisito:</i> terreno floresta.</p>
+
+<p><b>Masmorra.</b> Um conjunto de túneis, salas e armadilhas, normalmente construído para proteger um tesouro. Planejar a masmorra faz com que você pense sobre como melhor derrotar invasores e fornece +2 na CD de suas habilidades (exceto magias).</p>
+
+<p><b>Mercado.</b> Como uma feira, mas com mais produtos e dinheiro circulando. Além disso, está sempre aberto, exceto em dias sagrados. Muda o ganho da feira para 1d8 LO. <i>Pré-requisito:</i> feira.</p>
+
+<p><b>Mina.</b> Esta construção pode ser de superfície (um grande buraco no chão) ou subterrânea (com túneis chamados de “galerias”) e tem como objetivo extrair minérios valiosos da terra. Fornece espantosos 1d12 LO por turno, mas pode atrair monstros do subterrâneo — fornece –20% nas rolagens de eventos aleatórios. <i>Pré-requisito:</i> terreno montanha.</p>
+
+<p><b>Moinho.</b> Um engenho movido por vento ou água para moer grãos. Permite a produção de farinha e, consequentemente, melhor aproveitamento da colheita. O ganho da fazenda aumenta para 1d8–2 LO (ou 1d8 LO, se você também tiver um celeiro). <i>Pré-requisito:</i> fazenda.</p>
+
+<p><b>Mosteiro.</b> Uma habitação onde monges vivem em isolamento. Passar um tempo vivendo com os monges, de forma humilde e abnegada, fortalece sua fé. Você recebe +3 pontos de mana, mas apenas se for um conjurador divino (clérigo ou druida).</p>
+
+<p><b>Muralha.</b> Um muro alto formado por grande blocos de pedra. Possui um passadiço no topo protegido por merlões e ameias. Muda o bônus de Fortificação da paliçada para +5.</p>
+
+<p><b>Obra de Arte.</b> Um quadro, escultura ou outra criação inspiradora. Fornece +1 em Vontade.</p>
+
+<p><b>Oficina.</b> Um galpão repleto de bancadas de trabalho e ferramentas, onde pessoas — incluindo o próprio regente — podem trabalhar nas melhores condições. Fornece +2 em Ofício (qualquer).</p>
+
+<p><b>Ordem de Cavalaria.</b> A sede de uma irmandade devotada à honra e à justiça. Estar perto de pessoas tão exemplares o motiva a defender o bem. O custo de Baluarte diminui em –1 PM. Pré-requisito: forte.</p>
+
+<p><b>Palácio.</b> Esta construção luxuosa é feita para ostentar o poder do regente, influenciando as pessoas a segui-lo. Aumenta seu limite de parceiros em +1.</p>
+
+<p><b>Palco.</b> Um tablado elevado para espetáculos artísticos. Apresentar-se com frequência mantém suas habilidades afiadas, fornecendo +2 em Atuação.</p>
+
+<p><b>Paliçada.</b> Uma cerca feita de estacas pontiagudas fincadas no chão. Fornece +2 em <i>Fortificação</i>.</p>
+<p><b>Pátio de Treinamento.</b> Um espaço para guardas praticarem seus golpes. Um regente que possua um pátio de treinamento acaba observando os exercícios, ficando mais apto. Você recebe uma proficiência a sua escolha ou +1 em testes de ataque.</p>
+<p><b>Pedra de Maldições.</b> Uma pedra com símbolos pintados em sangue — ou um altar de ossos, um livro feito de pele humana... Uma vez por aventura, uma criatura em alcance curto sofre –5 em seu próximo teste de resistência, se realizado até o fim de seu próximo turno. <i>Pré-requisito:</i> salão dos mistérios.</p>
+<p><b>Pista de Arquearia.</b> Um campo para a prática de tiro ao alvo, onde camponeses acostumados a caçar pequenos animais podem treinar para caçar presas maiores. Permite recrutar arqueiros.</p>
+<p><b>Pista de Justas.</b> Uma faixa de terra onde torneios de cavalaria são disputados. Permite recrutar cavaleiros.</p>
+<p><b>Poço de Adivinhação.</b> Permite que o regente observe lugares — ou mesmo épocas — distantes, garantindo que fique preparado para qualquer tipo de situação. Uma vez por aventura, quando faz um teste, você pode rolar dois d20 e usar o melhor.</p>
+
+<p><b>Poço de Piche.</b> Um buraco no chão de onde piche e outras substâncias escorrem da terra. As matérias-primas extraídas do poço fornecem +2 na CD de seus preparados e venenos. <i>Pré-requisito:</i> terreno pântano.</p>
+
+<p><b>Porto.</b> Um porto marítimo, se o domínio ficar na costa, ou fluvial, se ficar no interior do continente, permite que barcos e navios atraquem, trazendo pesca e comércio — e aumentando a arrecadação de impostos. Fornece 1d6 LO por turno.</p>
+
+<p><b>Posto de Pedágio.</b> Se o regente mantém as estradas em boas condições e espanta monstros, nada mais justo que cobre um pouco de cada viajante. Os impostos que ele já cobra do povo? Ah, esses são para outros gastos! Quando você cobra impostos altos, recebe +1 LO por nível do domínio — postos de pedágio não são nem um pouco populares, e não são usados em impostos baixos ou médios. <i>Pré-requisito:</i> estradas.</p>
+
+<p><b>Povoado Afastado.</b> Esta pequena comunidade fica afastada do centro do domínio — longe o bastante para estar perto de outro tipo de terreno. Permite que você erga uma construção com pré-requisito de terreno diferente do seu.</p>
+<p><b>Quarto Luxuoso.</b> Você é um rei (ou algo parecido), então faz sentido que durma como um! Seu quarto tem uma cama enorme, com colchão de plumas de ganço, dossel, penteadeira e espelho. Por estar sempre descansado e bem-disposto, você recebe +3 pontos de vida.</p>
+
+<p><b>Relicário</b>. Uma caixa, cofre ou armário onde um objeto sagrado é guardado. A relíquia protege o regente - ou talvez o que o proteja seja a fé das pessoas que visitam o relicário para rezar. Uma vez por aventura, você recebe +5 num teste de resistência. <i>Pré-requisito</i>: capela.</p>
+
+<p><b>Sala de Mapas</b>. Além de mapas dos reinos, esta sala traz reconstituições de batalhas e relatos de estrategistas. Um regente que estude na sala de mapas aprende a se posicionar no campo de batalha. Você pode realizar uma ação de movimento extra no seu primeiro turno de cada combate.</p>
+
+<p><b>Sala de Meditação</b>. Uma sala silenciosa, onde você pode se conectar com suas energias místicas. Você recebe +3 pontos de mana, mas apenas se for um conjurador arcano (bardo ou mago).</p>
+
+<p><b>Sala do Trono</b>. Uma sala grandiosa, ostentando flâmulas com o brasão do regente e um assento elevado, de onde ele pode receber seus súditos, emissários e mesmo outros nobres... E olhá-los de cima. Fornece +2 em Diplomacia.</p>
+
+<p><b>Salão de Guerreiros</b>. Um salão de madeira, comprido, com mesas longas e braseiros no fundo, onde soldados podem se reunir e trocar histórias de batalha. Você recebe +1 no dano de cada dado de seu Ataque Disciplinado.</p>
+
+<p><b>Salão dos Mistérios</b>. Um ambiente repleto de objetos do oculto, como livros, pergaminhos, cristais, ervas, runas, ossos... além de ser o lar de corvos, gatos pretos, diabretes e outros bichinhos conectados com o lado arcano do mundo. Fornece +2 em Misticismo.</p>
+
+<p><b>Santuário</b>. Um lugar isolado, como uma gruta ou clareira escondida, ideal para venerar espíritos da natureza. Você recebe um poder de druida.</p>
+
+<p><b>Sede de Guilda</b>. Esta associação reúne mestres de diversos ofícios, que podem fornecer o melhor equipamento possível ao regente. No início de cada aventura, um item a sua escolha recebe uma melhoria (exceto melhorias de mortífice), até um máximo de quatro. <i>Pré-requisito</i>: oficina.</p>
+
+<p><b>Taverna</b>. Este lugar de confraternização, música e bebida é o ambiente perfeito para que as pessoas soltem a língua. O dono de uma Taverna está sempre a par das últimas fofocas. Uma vez por aventura, você pode interrogar (veja a página 81) como uma ação livre e sem gastar dinheiro, representando algo que ouviu numa noite na Taverna.</p>
+
+<p><b>Templo</b>. Um centro de devoção. Quando constrói um templo, você recebe um poder de clérigo.</p>
+
+<p><b>Torre de Estudos</b>. Esta torre isolada permite que você se dedique ao aprendizado místico. Quando você constrói uma torre de estudos, aprende uma magia arcana de sua lista.</p>
+
+<p><b>Torre de Guarnição</b>. Esta torre serve de dormitório, área de convivência e depósito de equipamento para os homens e mulheres que defendem o domínio. Permite recrutar guardas.</p>
+
+<p><b>Torre de Vigia</b>. Uma torre nas fronteiras do domínio, perfeita para avistar bandidos, monstros e outros invasores. Trabalhar como sentinela faz você ficar alerta e preparado para a ação. Fornece +2 em Percepção.</p>
+
+<p><b>Trupe de Malabaristas</b>. Estes acrobatas, mágicos e outros artistas podem divertir o regente e toda a sua corte, além de ensinar alguns truques úteis. Fornece +1 em Reflexos.</p>
+
+<p><b>Universidade</b>. Uma instituição de ensino e pesquisa, onde conhecimento é gerado e distribuído. Quando constrói uma universidade, você recebe um um poder geral.</p>
             
             <div class="col-md-12 post" id="post-4">
               <h2>Post 4</h2>
@@ -757,6 +906,15 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
       divisao5.style.display = "block";
     } else {
       divisao5.style.display = "none";
+    }
+  }
+  
+    document.getElementById("botao6").onclick = function() {
+    var divisao6 = document.getElementById("divisao6");
+    if (divisao6.style.display === "none") {
+      divisao6.style.display = "block";
+    } else {
+      divisao6.style.display = "none";
     }
   }
 	</script>
