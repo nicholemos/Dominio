@@ -66,7 +66,7 @@
                   <option value="1">Tornando-se Regente</option>
                   <option value="2">Características de Domínios</option>
                   <option value="3">Construções</option>
-                  <option value="4">Post 4</option>
+                  <option value="4">Unidades Militares</option>
                   <option value="5">Post 5</option>
                 </select>
               </div>
@@ -246,7 +246,7 @@ conselheiros e uma ação de domínio extra por turno.</i></p>
               <h2>Construções</h2>
               <p>Para adquirir uma construção, veja a seção “Turnos de Domínio”. Você só pode erguer construções cujos pré-requisitos cumpra, e pode ter um número máximo de construções igual a três vezes o nível de seu domínio (assim, um domínio
 de nível 1 pode ter no máximo três construções, um domínio de nível 2 pode ter no máximo seis e assim por diante). A perícia utilizada para cada construção, assim como seu custo, são indicados na Tabela Abaixo. Os efeitos da construção se aplicam imediatamente.</p>
-            </div>
+            
             <h2><u>Fortificação</u></h2>
 <p>Uma medida das defesas do domínio contra bandidos, exércitos inimigos e monstros. É definido pelas construções defensivas do domínio, como torres de vigia, muralhas, fossos e castelos.</p>
 
@@ -841,10 +841,124 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
 <p><b>Trupe de Malabaristas</b>. Estes acrobatas, mágicos e outros artistas podem divertir o regente e toda a sua corte, além de ensinar alguns truques úteis. Fornece +1 em Reflexos.</p>
 
 <p><b>Universidade</b>. Uma instituição de ensino e pesquisa, onde conhecimento é gerado e distribuído. Quando constrói uma universidade, você recebe um um poder geral.</p>
-            
+</div>
+
+
             <div class="col-md-12 post" id="post-4">
-              <h2>Post 4</h2>
-              <p>Phasellus mattis elit a leo eleifend, eget convallis eros ultricies. Integer ultricies, magna et gravida consectetur, justo quam aliquam tellus, ac vestibulum mauris leo vel orci. Ut non bibendum magna, id semper sapien.</p>
+              <h2>Unidades Militares</h2>
+              <p>Unidades militares são tropas sob comando de um regente. Cada unidade representa dez combatentes (por exemplo, 10 arqueiros, 10 cavaleiros etc.).</p>
+            <h2>Adquirindo Unidades</h2>
+            
+            <p>Unidades são adquiridas através da ação de domínio recrutar tropas. Cada vez que faz essa ação, você pode recrutar um número máximo de tropas igual ao nível do domínio. Nenhum teste é necessário, mas você precisa possuir determinadas construções e gastar lingotes de ouro. As construções e o custo em LO variam de acordo com a unidade (veja a tabela abaixo).
+            </p>
+            
+        <h2>Lista de Unidades Militares</h2>
+            
+		<p>A seguir está uma lista resumida de tropas. O mestre pode criar novas unidades militares para sua campanha, de tropas comuns, como fundeiros e lanceiros, a unidades exóticas, como arqueiros élficos e bandos de gigantes. Lembre-se de inventar também as construções para recrutá-las.</p>
+        
+        <button id="botao7">Unidades Militares</button>
+        <div id="divisao7" class="divisao">
+        
+       <table>
+  <tr>
+    <th style="color:black; background-color:gold">Tropa</th>
+    <th style="color:black; background-color:gold">Construção</th>
+    <th style="color:black; background-color:gold">Custo</th>
+    <th style="color:black; background-color:gold">Manutenção</th>
+    <th style="color:black; background-color:gold">Poder</th>
+    <th style="color:black; background-color:gold">Desl.</th>
+    <th style="color:black; background-color:gold">Defesa</th>
+    <th style="color:black; background-color:gold">Dano</th>
+  </tr>
+  <tr>
+    <td>Camponeses</td>
+    <td>-</td>
+    <td><sup>1</sup></td>
+    <td>-</td>
+    <td>1/2</td>
+    <td>9m</td>
+    <td>10</td>
+    <td>1d6</td>
+  </tr>
+  <tr>
+    <td>Milícia</td>
+    <td>Campo de treinamento</td>
+    <td>1 LO</td>
+    <td>0,25 LO</td>
+    <td>1</td>
+    <td>9m</td>
+    <td>16</td>
+    <td>1d8+1</td>
+  </tr>
+  <tr>
+    <td>Bandidos</td>
+    <td>Esconderijo</td>
+    <td>2 LO</td>
+    <td>0,5 LO</td>
+    <td>1</td>
+    <td>9m</td>
+    <td>15</td>
+    <td>2d6</td>
+  </tr>
+  <tr>
+    <td>Guardas</td>
+    <td>Torre de guarnição</td>
+    <td>2 LO</td>
+    <td>0,5 LO</td>
+    <td>2</td>
+    <td>6m</td>
+    <td>19</td>
+    <td>1d8+2</td>
+  </tr>
+  <tr>
+    <td>Arqueiros</td>
+    <td>Pista de arquearia</td>
+    <td>2 LO</td>
+    <td>0,5 LO</td>
+    <td>2</td>
+    <td>9m</td>
+    <td>15</td>
+    <td>1d8<sup>2</sup></td>
+  </tr>
+  <tr>
+    <td>Cães de guerra</td>
+    <td>Canil</td>
+    <td>2 LO</td>
+    <td>0,25 LO</td>
+    <td>2</td>
+    <td>15m</td>
+    <td>14</td>
+    <td>1d6+3</td>
+  </tr>
+<tr>
+    <td>Cavaleiros</td>
+    <td>Pista de justa</td>
+    <td>6 LO</td>
+    <td>1 LO</td>
+    <td>5</td>
+    <td>12m</td>
+    <td>24</td>
+    <td>1d8+3<sup>3</sup></td>
+  </tr>
+</table>
+<sup>1</sup> Veja a ação convocar camponeses.<br>
+<sup>2</sup> Podem causar dano a criaturas em alcance médio.<br>
+<sup>3</sup> Se causarem dano na mesma rodada em que ficarem adjacentes ao alvo, causam +1d8 pontos de dano.
+       
+        </div>
+        
+        <h2>Usando Unidades</h2>
+            
+		<p>Unidades podem ser usadas para defender um domínio e para lutar ao lado do regente em aventuras.<br>
+        Quando um domínio é atacado, pelo resultado de um evento aleatório ou como parte de uma aventura, as unidades entram em ação. Batalhas envolvendo domínios podem ser resolvidas como combates normais — nesse caso, as unidades funcionam como capangas — ou com regras simplificadas. Nessas regras, o Poder da unidade — uma medida geral da eficácia da tropa no campo de batalha — se torna uma estatística relevante.<br>
+        Note que representar a defesa de um domínio com um combate é emocionante, mas pode ser demorado. Se o seu grupo gosta de batalhas táticas, é uma opção divertida. Mesmo assim, é melhor deixá-la apenas para batalhas importantes dentro da campanha. Para batalhas secundárias, ou para grupos que não querem gastar muito tempo num único combate, é melhor usar as regras simplificadas.</p>
+            
+            
+         <h2>Unidades em Aventuras</h2>
+            
+		<p>Ao partir para uma aventura, um regente pode levar unidades consigo. Nesse caso, elas funcionam como capangas. Cada tropa possui 10 membros, com as estatísticas da tabela abaixo. Unidades militares não contam em seu limite de parceiros. Em vez disso, o máximo de unidades que você pode levar é igual ao nível do seu domínio.<br>
+Assim, o regente de um domínio de nível 3 pode levar até três tropas em uma aventura — considerando que possua tais tropas. Você pode usar cada unidade em apenas uma cena. Após isso, elas retornam para o domínio, tendo cumprido seu dever para com o regente, e só poderão ser usadas novamente a partir da próxima aventura.</p>   
+              
             </div>
             <div class="col-md-12 post" id="post-5">
               <h2>Post 5</h2>
@@ -917,6 +1031,16 @@ de nível 1 pode ter no máximo três construções, um domínio de nível 2 pod
       divisao6.style.display = "none";
     }
   }
+  
+    document.getElementById("botao7").onclick = function() {
+    var divisao7 = document.getElementById("divisao7");
+    if (divisao7.style.display === "none") {
+      divisao7.style.display = "block";
+    } else {
+      divisao7.style.display = "none";
+    }
+  }
+  
 	</script>
   </body>
 </html>
