@@ -66,6 +66,11 @@
         table tr:nth-child(8) {
             background-color: #ffcc99;
         }
+        
+        #reino-imagem {
+  width: 400px;
+  height: 300px;
+}
     </style>
 
 </head>
@@ -1813,9 +1818,9 @@
 
 <img id="reino-imagem" src="" alt="Imagem do reino">
 <br>
-<button id="botao" style="display: none;" onclick="rollDice()">Tipo de Terreno</button>
-<button id="botao1" style="display: none;" onclick="rollDice1()">Rolar Rio</button>
-<button id="botao2" style="display: none;" onclick="rollDice2()">Elemento Místico</button>
+<button id="botao" style="display: inline-block;" onclick="rollDice()">Tipo de Terreno</button>
+<button id="botao1" style="display: inline-block;" onclick="rollDice1()">Rolar Rio</button>
+<button id="botao2" style="display: inline-block;" onclick="rollDice2()">Elemento Místico</button>
 
 <div id="result"></div>
 <div id="result1"></div>
@@ -1958,7 +1963,7 @@
     let option1;
     switch (roll1) {
       case 1:
-        option1 = `<img src="https://p.turbosquid.com/ts-thumb/7f/6eLLmJ/BbHUONNv/08sesig/jpg/1504264768/600x600/fit_q87/2ba95a00e98cb9554b47abc057968c375b5213a0/08sesig.jpg" alt="Sem ligação com o mar">`;
+        option1 = "Sem ligação com o mar";
         break;
       case 2:
         option1 = "Sem ligação com o mar";
@@ -2013,23 +2018,17 @@
     let imageElement = document.getElementById("reino-imagem");
     if(selectedOption === "nenhum"){
     	 imageElement.src = "https://preview.redd.it/acgreznsj1671.jpg?width=960&crop=smart&auto=webp&s=7a4cdca1eddab4f1fa6637c1121b622b099c3c52";
-          document.getElementById("botao").style.display = "none";
-          document.getElementById("botao1").style.display = "none";
-          document.getElementById("botao2").style.display = "none";
+          
          
     
     }else if (selectedOption === "ahlen") {
       imageElement.src = "https://i.pinimg.com/564x/33/f0/98/33f098dbacc07bdb1c44748be3315792.jpg";
-      document.getElementById("botao").style.display = "inline-block";
-      document.getElementById("botao1").style.display = "inline-block";
-      document.getElementById("botao2").style.display = "inline-block";
+      
     
     
     } else if (selectedOption === "bielefeld") {
       imageElement.src = "https://i.pinimg.com/564x/79/73/f2/7973f2af996a9833a50a1e8949d468bc.jpg";
-      document.getElementById("botao").style.display = "inline-block";
-      document.getElementById("botao1").style.display = "inline-block";
-      document.getElementById("botao2").style.display = "inline-block";
+     
       
       
     }
