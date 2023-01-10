@@ -1821,13 +1821,28 @@
 <button id="botao" style="display: inline-block;" onclick="rollDice()">Tipo de Terreno</button>
 <button id="botao1" style="display: inline-block;" onclick="rollDice1()">Rolar Rio</button>
 <button id="botao2" style="display: inline-block;" onclick="rollDice2()">Elemento Místico</button>
+<table border="1">
 
-<div id="result"></div>
-<div id="result1"></div>
-<div id="result2"></div>
+<tr style="background-color: brown">
+  <th style="width: 25% text-align: left; color: white">
+Terreno</th>
+  <th style="width: 25%;  text-align: left; color: white">Rio/Mar</th>
+  <th style="width: 25%; text-align: left; color: white">Elemento</th>
+  <th style="width: 25%; text-align: left; color: white">Total</th>
+</tr>
 
+ <tr style="border: 1; background-color: white">
+    <td id="result"></td>
+    <td id="result1"></td>
+    <td id="result2"></td>
+	<td id="result3"></td>
+  <tr>
+ 
+  
+  
+  </table>
 </div>
-                
+            
                 <script>
                     $(document).ready(function () {
                         $('#blog-selector').change(function () {
@@ -1922,37 +1937,47 @@
                 </script>
                 <script>
 	function rollDice() {
+    let total = 0;
+
     // Gera um número aleatório entre 1 e 7
     let roll = Math.floor(Math.random() * 7) + 1;
         
     // Define a opção correspondente para cada resultado
     let option;
     switch (roll) {
-      case 1:
-        option = "Colinas";
-        break;
-      case 2:
-        option = "Deserto";
-        break;
-      case 3:
-        option = "Floresta";
-        break;
-      case 4:
-        option = "Montanha";
-        break;
-      case 5:
-        option = "Pântano";
-        break;
-      case 6:
-        option = "Planície";
-        break;
-      case 7:
-        option = "Subterrâneo";
-        break;
-    }
+  case 1:
+    option = "Colinas";
+    total += 5;
+    break;
+  case 2:
+    option = "Deserto";
+    total += 4;
+    break;
+  case 3:
+    option = "Floresta";
+    total += 4;
+    break;
+  case 4:
+    option = "Montanha";
+    total += 3;
+    break;
+  case 5:
+    option = "Pântano";
+    total += 3;
+    break;
+  case 6:
+    option = "Planície";
+    total += 6;
+    break;
+  case 7:
+    option = "Subterrâneo";
+    total += 2;
+    break;
+}
+
   // Altera o conteúdo da div com o ID "result"
     document.getElementById("result").innerHTML = option;
-        
+   document.getElementById("result3").innerHTML = total;    
   }
   
   function rollDice1() {
