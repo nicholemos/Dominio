@@ -1807,7 +1807,7 @@
                 
                    <div class="row" id="blog-posts">
                             <div class="col-md-12 post" id="post-8">
-                                <h2>Rolagens de Domínios:<br> Armada de Vectora</h2>
+                                <h2>Rolagens de Domínios:<br></h2>
 
 <label for="reinos">Reinos:</label>
 <select id="reinos" onchange="optionSelected()">
@@ -1828,7 +1828,8 @@
 Terreno</th>
   <th style="width: 25%;  text-align: left; color: white">Rio/Mar</th>
   <th style="width: 25%; text-align: left; color: white">Elemento</th>
-  <th style="width: 25%; text-align: left; color: white">Total</th>
+  <th style="width: 25%; text-align: left; color: white">Nível Máximo</th>
+  <th style="width: 25%; text-align: left; color: white">Potencial Mágico</th>
 </tr>
 
  <tr style="border: 1; background-color: white">
@@ -1836,6 +1837,7 @@ Terreno</th>
     <td id="result1"></td>
     <td id="result2"></td>
 	<td id="result3"></td>
+    <td id="result4"></td>
   <tr>
  
   
@@ -1938,6 +1940,7 @@ Terreno</th>
                 <script>
 	function rollDice() {
     let total = 0;
+    let magic = 0;
 
     // Gera um número aleatório entre 1 e 7
     let roll = Math.floor(Math.random() * 7) + 1;
@@ -1948,65 +1951,83 @@ Terreno</th>
   case 1:
     option = "Colinas";
     total += 5;
+    magic += 5;
     break;
   case 2:
     option = "Deserto";
     total += 4;
+    magic += 6;
     break;
   case 3:
     option = "Floresta";
     total += 4;
+    magic += 6;
     break;
   case 4:
     option = "Montanha";
     total += 3;
+    magic += 7;
     break;
   case 5:
     option = "Pântano";
     total += 3;
+    magic += 7;
     break;
   case 6:
     option = "Planície";
     total += 6;
+    magic += 4;
     break;
   case 7:
     option = "Subterrâneo";
     total += 2;
+    magic += 8;
     break;
 }
 
   // Altera o conteúdo da div com o ID "result"
     document.getElementById("result").innerHTML = option;
-   document.getElementById("result3").innerHTML = total;    
+   document.getElementById("result3").innerHTML = total;
+   document.getElementById("result4").innerHTML = magic; 
   }
   
   function rollDice1() {
     // Gera um número aleatório entre 1 e 4
     let roll1 = Math.floor(Math.random() * 4) + 1;
+    let total = parseInt(document.getElementById("result3").innerHTML);
         
     // Define a opção correspondente para cada resultado
     let option1;
     switch (roll1) {
       case 1:
         option1 = "Sem ligação com o mar";
+        total == 0;
+       
         break;
       case 2:
         option1 = "Sem ligação com o mar";
+        total == 0;
         break;
       case 3:
         option1 = "Sem ligação com o mar";
+        total == 0;
+        
         break;
       case 4:
         option1 = "Possui ligação com o mar";
+        total += 1;
         break;
       
     }
   // Altera o conteúdo da div com o ID "result"
     document.getElementById("result1").innerHTML = option1;
+    document.getElementById("result3").innerHTML = total; 
         
   }
   
   function rollDice2() {
+  
+  	let magic = parseInt(document.getElementById("result4").innerHTML);
     // Gera um número aleatório entre 1 e 4
     let roll2 = Math.floor(Math.random() * 4) + 1;
         
@@ -2015,21 +2036,25 @@ Terreno</th>
     switch (roll2) {
       case 1:
         option2 = "Sem Elemento Místico";
+        magic == 0;
         break;
       case 2:
         option2 = "Sem Elemento Místico";
+        magic == 0;
         break;
       case 3:
         option2 = "Sem Elemento Místico";
+        magic == 0;
         break;
       case 4:
         option2 = "Possui Elemento Místico";
+        magic += 1;
         break;
       
     }
   // Altera o conteúdo da div com o ID "result"
     document.getElementById("result2").innerHTML = option2;
-        
+    document.getElementById("result4").innerHTML = magic;    
   }
   
 </script>
